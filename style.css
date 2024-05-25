@@ -1,0 +1,46 @@
+@keyframes flash { /* Define uma animação chamada "flash" */
+    0%, 100% {background-color: #ff0000;} /* No início e no fim da animação, a cor de fundo é vermelha */
+    25% {background-color: #00ff00;} /* Aos 25% do tempo de animação, a cor de fundo muda para verde */
+    50% {background-color: #0000ff;} /* Aos 50%, a cor de fundo muda para azul */
+    75% {background-color: #ff00ff;} /* Aos 75%, a cor de fundo muda para roxo */
+}
+
+body { /* Aplica a animação ao corpo inteiro da página */
+    animation: flash 1s infinite; /* Aplica a animação "flash", com duração de 1 segundo e repetição infinita */
+}
+
+h1 { /* Estiliza o cabeçalho h1 */
+    color: #ffffff; /* A cor do texto é branca */
+    text-shadow: 2px 2px 4px #000000; /* Adiciona uma sombra preta ao texto */
+}
+
+form { /* Estiliza o formulário */
+    background-color: rgba(0, 0, 0, 0.7); /* A cor de fundo é preta com 70% de opacidade */
+    padding: 20px; /* Adiciona um preenchimento de 20 pixels em todos os lados do formulário */
+    border-radius: 15px; /* Arredonda os cantos do formulário */
+    color: #ffffff; /* A cor do texto dentro do formulário é branca */
+}
+
+input[type="text"], input[type="email"], input[type="password"] { /* Estiliza os campos de entrada de texto, email e senha */
+    width: 100%; /* A largura é de 100% do contêiner pai */
+    padding: 12px 20px; /* Adiciona um preenchimento de 12 pixels verticalmente e 20 pixels horizontalmente */
+    margin: 8px 0; /* Adiciona uma margem de 8 pixels verticalmente */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara */
+    border-radius: 4px; /* Arredonda os cantos dos campos de entrada */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total */
+}
+
+input[type="submit"], input[type="reset"] { /* Estiliza os botões de envio e reset */
+    width: 100%; /* A largura é de 100% do contêiner pai */
+    background-color: #4CAF50; /* A cor de fundo é verde */
+    color: white; /* A cor do texto é branca */
+    padding: 14px 20px; /* Adiciona um preenchimento de 14 pixels verticalmente e 20 pixels horizontalmente */
+    margin: 8px 0; /* Adiciona uma margem de 8px verticalmente */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Arredonda os cantos dos botões */
+    cursor: pointer; /* Muda o cursor para um ponteiro quando o mouse passa sobre os botões */
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover { /* Muda a cor de fundo dos botões quando o mouse passa sobre eles */
+    background-color: #45a049; /* A cor de fundo é um verde mais escuro */
+}
